@@ -1,0 +1,124 @@
+# Config
+# ========================================================================================
+
+url: https://aj-peng.github.io
+baseurl: '/portfolio'
+
+lang: en
+title: AJ Peng
+description: Technical projects portfolio
+tagline: See people beyond their exterior.
+
+keywords: []
+author:
+  name: <Andrew> <Peng>
+  email: <apeng12@terpmail.umd.edu>
+
+logo: /assets/img/moon.png
+menu:
+  - title: About
+    url: /#about
+  - title: Projects
+    url: /#projects
+  - title: Misc
+    url: /#misc
+
+copyright: © 2024. All rights reserved.
+
+permalink: /:categories/:year-:month-:day-:title/
+paginate: 10
+paginate_path: /:num/
+
+theme: jekyll-theme-hydejack
+
+favicon: /assets/img/moon.png
+apple_touch_icon: /assets/img/moon.png
+accent_image: /assets/img/floral.jpg
+accent_color: rgb(79,177,186)
+theme_color: rgb(25,55,71)
+
+font: Calisto MT, Arial, sans-serif
+font_heading: Calisto MT, Arial, sans-serif
+
+kramdown:
+  math_engine: mathjax
+  math_engine_opts: {}
+  footnote_backlink: '&#x21a9;&#xfe0e;'
+
+
+# Hydejack Settings
+# ----------------------------------------------------------------------------------------
+
+hydejack:
+  post_addons: []
+  project_addons: []
+  no_mark_external: false
+  no_push_state: false
+  no_drawer: false
+  no_navbar: true
+  no_search: true
+  no_inline_css: false
+  no_page_style: false
+  no_break_layout: true
+  no_toc: true
+  no_third_column: true
+  no_large_headings: false
+  no_structured_data: false
+  no_theme_color: false
+  no_breadcrumbs: true
+  use_lsi: true
+  cookies_banner: false
+  advertise: false
+  dark_mode:
+    always: false
+    dynamic: true
+    icon: true
+  # Experimental feature
+  offline:
+    enabled: false
+    cache_version: 13
+    precache_assets:
+      - /assets/img/swipe.svg
+
+# File inclusion/exclusion
+# ----------------------------------------------------------------------------------------
+
+exclude:
+  - .jekyll-cache
+  - .sass-cache
+  - .ruby-lsp
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  -
+# Plugins
+# ----------------------------------------------------------------------------------------
+
+plugins:
+  - jekyll-default-layout
+  - jekyll-feed
+  - jekyll-optional-front-matter
+  - jekyll-paginate
+  - jekyll-readme-index
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
+  - jekyll-include-cache
+  - jekyll-last-modified-at
+
+# Plugin Configs
+# ---------------------------------------------------------------------------------------
+optional_front_matter:
+  remove_originals: true
+
+compress_html:
+  comments: ["<!--", "-->"]
+  clippings: all
+  endings: all
+  ignore:
+    envs: [development]
+
+sass:
+  style: compressed

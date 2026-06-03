@@ -1,0 +1,35 @@
+// CSS style
+article.page {
+  max-width: 100%;
+}
+
+hr.dingbat {
+  margin-bottom: 2rem;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 320px;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project a::after {
+  display: none !important;
+}
+
+footer em {
+  color: rgb(255, 213, 79);
+  font-style: italic;
+}
+
+footer small {
+  font-size: 0.9rem;
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .project { flex-direction: column; }
+  .project-image { width: 100%; }
+}

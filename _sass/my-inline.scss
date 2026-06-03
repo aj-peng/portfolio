@@ -1,0 +1,30 @@
+// CSS inline
+html {
+  scroll-padding-top: 8rem;
+  scroll-behavior: smooth;
+}
+
+.project {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.project-image {
+  flex-shrink: 0;
+  width: 30%;
+}
+
+.project-content {
+  flex: 1;
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+  }
+}
