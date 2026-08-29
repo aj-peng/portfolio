@@ -9,10 +9,12 @@ hr.dingbat {
 
 .project-image img {
   width: 100%;
-  max-width: 320px;
-  max-height: 200px;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
+  background: #000000;
   border-radius: 8px;
+  display: block;
 }
 
 .project a::after {
@@ -20,7 +22,7 @@ hr.dingbat {
 }
 
 footer em {
-  color: rgb(255, 213, 79);
+  color: rgb(79, 213, 255);
   font-style: italic;
 }
 

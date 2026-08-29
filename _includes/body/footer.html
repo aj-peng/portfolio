@@ -2,14 +2,6 @@
 <footer class="content" role="contentinfo">
     <hr/>
 
-    <p>
-        <small>
-            Best to contact me via
-            <a href="mailto:{{ site.author.email }}">email</a>
-            and <em>please state your request clearly.</em>
-        </small>
-    </p>
-
     {% if site.copyright.size > 0 %}
     <p>
         <small class="copyright">
@@ -18,17 +10,11 @@
     </p>
     {% endif %}
 
-    {% if site.legal.size > 0 %}
-    <nav class="legal"><small>
-        {% for node in site.legal %}
-        {% assign url = node.url | default: node.href %}
-        <a class="heading flip-title" href="{% include_cached smart-url url=url %}">
-            {{ node.name | default: node.title }}
-        </a>
-        {% unless forloop.last %}{{ site.data.strings.separator | default:'|' }}{% endunless %}
-        {% endfor %}
-    </small></nav>
-    {% endif %}
+    <p>
+        <small>
+            Best to contact me via <a href="mailto:{{ site.author.email }}">email</a> and <em>please state your request clearly.</em>
+        </small>
+    </p>
 
     <p>
         <small>Powered by

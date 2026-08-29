@@ -5,8 +5,8 @@ url: https://aj-peng.github.io
 baseurl: '/portfolio'
 
 lang: en
-title: AJ Peng
-description: Technical projects portfolio
+title: ajpeng
+description: projects portfolio
 tagline: See people beyond their exterior.
 
 keywords: []
@@ -90,7 +90,6 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
-  -
 # Plugins
 # ----------------------------------------------------------------------------------------
 
