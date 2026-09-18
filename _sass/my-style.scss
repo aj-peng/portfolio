@@ -1,0 +1,37 @@
+// CSS style
+article.page {
+  max-width: 100%;
+}
+
+hr.dingbat {
+  margin-bottom: 2rem;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: #000000;
+  border-radius: 8px;
+  display: block;
+}
+
+.project a::after {
+  display: none !important;
+}
+
+footer em {
+  color: rgb(79, 213, 255);
+  font-style: italic;
+}
+
+footer small {
+  font-size: 0.9rem;
+}
+
+// Mobile
+@media (max-width: 768px) {
+  .project { flex-direction: column; }
+  .project-image { width: 100%; }
+}

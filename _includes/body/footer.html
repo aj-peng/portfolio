@@ -1,0 +1,28 @@
+{% if site.copyright.size > 0 or site.legal.size > 0 or site.hydejack.advertise %}
+<footer class="content" role="contentinfo">
+    <hr/>
+
+    {% if site.copyright.size > 0 %}
+    <p>
+        <small class="copyright">
+            {{ site.copyright | markdownify | replace:'<p>','' | replace:'</p>','' }}
+        </small>
+    </p>
+    {% endif %}
+
+    <p>
+        <small>
+            Best to contact me via <a href="mailto:{{ site.author.email }}">email</a> and <em>please state your request clearly.</em>
+        </small>
+    </p>
+
+    <p>
+        <small>Powered by
+            <a class="external" href="https://hydejack.com/">Hydejack</a>
+            v<span id="_version">9.2.1</span>
+        </small>
+    </p>
+
+    <hr class="sr-only"/>
+</footer>
+{% endif %}
